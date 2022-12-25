@@ -1,7 +1,12 @@
 import "./App.scss";
+import Routess from "./Routes";
 
 function App() {
-  return <>Hello world</>;
+  return (
+    <>
+      <Routess />
+    </>
+  );
 }
 
 export default App;

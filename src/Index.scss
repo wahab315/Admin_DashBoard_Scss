@@ -1,0 +1,67 @@
+@import "./scss/mixins";
+@import "./scss/variable";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+}
+
+.divider {
+  border-bottom: 1px solid $light-gray;
+}
+
+//  common Style
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.d-flex {
+  display: flex;
+}
+
+.item-align {
+  display: flex;
+  align-items: center;
+}
+.item-space-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-space-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-space-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item-space-e {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

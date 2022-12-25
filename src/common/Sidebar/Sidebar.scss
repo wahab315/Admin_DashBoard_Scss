@@ -1,0 +1,63 @@
+@import "../../scss/variable";
+.sidebar {
+  flex: 1;
+  box-shadow: 3px 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+  min-height: 100vh;
+  background-color: $white;
+  // For Logo
+  &-top {
+    padding: 1.5rem 0rem;
+    &-logo {
+      & > h4 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  // Main Content Area of sidebar
+  &-center {
+    padding: 1rem 2rem;
+    & > ul {
+      & > p {
+        color: $light-gray;
+      }
+      & > li {
+        display: flex;
+        align-items: center;
+        padding: 0.6rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        color: #260867d3;
+        transition: 0.3s ease-in-out;
+        & > * {
+          &:not(:last-child) {
+            margin-right: 1rem;
+            font-size: 2rem;
+            color: #260867d3;
+          }
+        }
+        &:hover {
+          background: #8cb8ff90;
+          color: black;
+        }
+      }
+    }
+  }
+  // Colo Option
+  &-bottom {
+    margin-left: 3.1rem;
+    & > * {
+      background-color: black;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid black;
+
+      &:not(:last-child) {
+        background-color: white;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
