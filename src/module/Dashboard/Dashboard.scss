@@ -2,7 +2,16 @@
   &-container {
     &-content {
       flex: 6;
-      background-color: red;
+      &-widget {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 2rem;
+        margin: 3rem 4rem;
+      }
+      &-chart {
+        padding: 0rem 4rem;
+        margin: 2rem 0rem;
+      }
     }
   }
 }

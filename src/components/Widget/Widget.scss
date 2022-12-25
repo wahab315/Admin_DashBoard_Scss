@@ -1,0 +1,23 @@
+.widget {
+  -webkit-box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.377),
+    1px 1px 16px -2px rgba(0, 0, 0, 0.377);
+  box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.377),
+    1px 1px 16px -2px rgba(0, 0, 0, 0.377);
+  border-radius: 1rem;
+  &-container {
+    padding: 1rem;
+    & > * {
+      padding: 0.7rem 0rem;
+      &:last-child {
+        & > * {
+          &:last-child {
+            font-size: 2rem;
+            padding: 1rem;
+            background-color: lightblue;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
